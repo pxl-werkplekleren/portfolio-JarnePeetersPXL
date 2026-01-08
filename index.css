@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #667b9a, #f2a88b);
+    font-family: "Patrick Hand", cursive;
+    color: #2e2e2e;
+}
+
+.hero {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+.polaroid-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.polaroid {
+    background: #f7f2e8;
+    padding: 1rem;
+    border: 2px solid #e4d9c6;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transform: rotate(-2deg);
+    transition: 0.2s;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.polaroid:hover {
+    transform: rotate(0deg) scale(1.03);
+}
+
+.polaroid img {
+    width: 100%;
+    display: block;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.inleiding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+table {
+    width: 95%;
+    margin: 0 auto 40px auto;
+    border-collapse: collapse;
+    background: #fff8f0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+
+thead th {
+    background: #6c89a5;
+    color: #fff;
+    padding: 12px 10px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+
+td {
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #e0d6c6;
+}
+
+
+td ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+tbody tr:nth-child(even) {
+    background: #fdf6f0;
+}
+
+
+td em {
+    font-style: italic;
+    color: #a75c5c;
+}
+
+
+tbody tr:hover {
+    background: #fff0e6;
+    transition: background 0.2s ease;
+}
+
+
+.schedule-table td, .evaluation-table td {
+    position: relative;
+}
+
+.schedule-table td::before, .evaluation-table td::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+@media (max-width: 900px) {
+    table {
+        font-size: 0.9rem;
+    }
+
+    thead th {
+        font-size: 1rem;
+    }
+}
