@@ -141,3 +141,133 @@ tbody tr:hover {
         font-size: 1rem;
     }
 }
+
+.rewind-button-lis {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 248, 240, 0.85);
+    border: 3px dashed #6c89a5;
+    border-radius: 50%;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    z-index: 1000;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.rewind-button-lis .arrow {
+    font-size: 2.5rem;
+    color: #6c89a5;
+    display: block;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.rewind-button-lis:hover {
+    transform: rotate(-10deg) scale(1.15);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    background: rgba(255, 248, 240, 1);
+}
+
+.rewind-button-lis:hover .arrow {
+    transform: rotate(-360deg);
+}
+
+.journal-entry {
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px;
+}
+
+.polaroid {
+    background: #fff8f0;
+    border: 2px solid #e0d6c6;
+    padding: 25px;
+    max-width: 700px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    font-family: 'Patrick Hand', cursive;
+    line-height: 1.6;
+    position: relative;
+}
+
+.polaroid img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.polaroid p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.polaroid::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    width: 40px;
+    height: 20px;
+    background: #fffb7d;
+    transform: rotate(-10deg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+.role-reflectie {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.role-reflectie h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.reflectie-card {
+    background: #fff8f0;
+    border: 2px solid #e0d6c6;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'Patrick Hand', cursive;
+    line-height: 1.6;
+    transition: transform 0.3s ease;
+}
+
+.reflectie-card:hover {
+    transform: rotate(-1deg) scale(1.02);
+}
+
+.reflectie-card .question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4a5a75;
+}
+
+.reflectie-card textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1rem;
+    resize: vertical;
+}
