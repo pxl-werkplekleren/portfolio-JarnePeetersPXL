@@ -275,7 +275,7 @@ tbody tr:hover {
 .lis-timeline {
     max-width: 900px;
     margin: 40px auto;
-    font-family: "Patrick Hand", cursive, Arial, sans-serif;
+    font-family: "Patrick Hand", cursive;
 }
 
 .lis-timeline h1 {
@@ -339,3 +339,260 @@ tbody tr:hover {
     transform: rotate(0deg) scale(1.01);
     transition: 0.2s ease;
 }
+
+.aim-reflection {
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: "Patrick Hand", cursive;
+    line-height: 1.6;
+}
+
+.aim-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.aim-block {
+    position: relative;
+    background: #fffdf6;
+    border: 1px solid #e8dcc6;
+    padding: 18px 20px 18px 60px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    box-shadow: 2px 3px 7px rgba(0,0,0,0.25);
+    transform: rotate(-0.7deg);
+}
+
+.aim-block:hover {
+    transform: rotate(0deg) scale(1.01);
+    transition: 0.2s ease;
+}
+
+.aim-block h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.doodle {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    font-size: 26px;
+    opacity: 0.85;
+    transform: rotate(-10deg);
+    pointer-events: none;
+}
+
+.doodle-heart {
+    color: #e37b7b;
+}
+
+.doodle-star {
+    color: #f4c158;
+}
+
+.doodle-lightbulb {
+    color: #ffd966;
+}
+
+.doodle-cloud {
+    color: #9eb6d8;
+}
+
+.doodle-rewind {
+    color: #7aa3c7;
+}
+
+.aim-text[contenteditable="true"] {
+    outline: none;
+    min-height: 100px;
+}
+
+.aim-text[contenteditable="true"]:focus {
+    background: #fffbe8;
+}
+
+.kernkwadrant {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+.kernkwadrant h2 {
+    font-family: "Permanent Marker", "Patrick Hand", cursive;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    transform: rotate(-1deg);
+}
+
+.kwadrant-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
+}
+
+.kwadrant-box {
+    border: 2px solid #2b2b2b;
+    padding: 15px 18px;
+    background: #fffdf7;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    transform: rotate(-0.6deg);
+    position: relative;
+}
+
+.kwadrant-box .label {
+    font-weight: bold;
+    font-family: "Permanent Marker", "Patrick Hand", cursive;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.kwadrant-box p {
+    margin: 0;
+    font-family: "Kalam", "Patrick Hand", cursive;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.kwadrant-box::after {
+    content: "";
+    width: 28px;
+    height: 12px;
+    background: rgba(255, 235, 140, 0.9);
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+}
+
+.kwadrant-reflectie {
+    background: #fffdf7;
+    padding: 18px 20px;
+    margin-top: 20px;
+    border-left: 4px solid #6aa5ff;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    transform: rotate(-0.4deg);
+}
+
+.kwadrant-reflectie h3 {
+    font-family: "Permanent Marker", "Patrick Hand", cursive;
+    margin-bottom: 10px;
+}
+
+.kwadrant-reflectie p {
+    font-family: "Kalam", "Patrick Hand", cursive;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.xfactor-diagram {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+    background: #fff8f0;
+    border: 3px solid #f2e0c8;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+.circle-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    transform: translate(-50%, -50%);
+    border: 3px dotted #333;
+    border-radius: 50%;
+    background: #fffbe6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.2em;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.note {
+    position: absolute;
+    width: 160px;
+    min-height: 150px;
+    background: #fffdf0;
+    border: 2px solid #ccc;
+    padding: 10px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 0.85em;
+    color: #333;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    text-align: left;
+    z-index: 2;
+}
+
+.note::after {
+    content: "";
+    width: 28px;
+    height: 12px;
+    background: rgba(255, 235, 140, 0.9);
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+}
+
+.note-top-left {
+    top: 50px;
+    left: 50px;
+    transform: rotate(-7deg);
+}
+
+.note-top-right {
+    top: 50px;
+    right: 50px;
+    transform: rotate(5deg);
+}
+
+.note-bottom-left {
+    bottom: 50px;
+    left: 50px;
+    transform: rotate(4deg);
+}
+
+.note-bottom-right {
+    bottom: 50px;
+    right: 50px;
+    transform: rotate(-5deg);
+}
+
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.lis-footer {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto 20px auto;
+    padding: 15px 20px;
+    background: #fffbe6;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1em;
+    text-align: center;
+    transform: rotate(-2deg);
+}
+
+.lis-footer:hover {
+    transform: rotate(1deg);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
