@@ -271,3 +271,71 @@ tbody tr:hover {
     font-size: 1rem;
     resize: vertical;
 }
+
+.lis-timeline {
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: "Patrick Hand", cursive, Arial, sans-serif;
+}
+
+.lis-timeline h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.timeline {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #7aa3c7;
+    box-shadow: 0 0 6px rgba(0,0,0,0.25);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 18px;
+    height: 18px;
+    background: #e37b7b;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    left: -1px;
+    top: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.25);
+}
+
+.timeline-content {
+    background: #fffdf7;
+    border: 1px solid #e5dcc8;
+    padding: 15px 18px;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 7px rgba(0,0,0,0.25);
+    transform: rotate(-1deg);
+}
+
+.timeline-content h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.timeline-content:hover {
+    transform: rotate(0deg) scale(1.01);
+    transition: 0.2s ease;
+}
