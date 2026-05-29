@@ -1,8 +1,20 @@
+
 body {
     margin: 0;
-    background: linear-gradient(180deg, #667b9a, #f2a88b);
+    background: linear-gradient(180deg, #667b9a 0%, #8a9fb8 30%, #c9a090 70%, #f2a88b 100%);
+    min-height: 100vh;
     font-family: "Patrick Hand", cursive;
     color: #2e2e2e;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0 0 10px 0;
 }
 
 .hero {
@@ -12,50 +24,30 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 20px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.5);
+    color: #fff;
 }
 
-h1 {
-    font-size: 4rem;
-    letter-spacing: 2px;
+.hero h1 {
+    color: #fff;
+}
+
+.hero h2 {
+    color: rgba(255,255,255,0.92);
+    font-size: 1.8rem;
+    margin-top: 8px;
 }
 
 .tagline {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     opacity: 0.9;
-}
-
-.polaroid-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 3rem;
-}
-
-.polaroid {
-    background: #f7f2e8;
-    padding: 1rem;
-    border: 2px solid #e4d9c6;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    transform: rotate(-2deg);
-    transition: 0.2s;
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
-.polaroid:hover {
-    transform: rotate(0deg) scale(1.03);
-}
-
-.polaroid img {
-    width: 100%;
-    display: block;
-}
-
-.caption {
+    max-width: 700px;
+    line-height: 1.7;
     text-align: center;
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
+    padding: 0 20px 30px 20px;
+    color: #2e2e2e;
+    text-shadow: none;
 }
 
 .inleiding {
@@ -64,6 +56,195 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 10px 20px 0 20px;
+}
+
+.chapter-header {
+    text-align: center;
+    margin: 50px auto 6px auto;
+    max-width: 1100px;
+    padding: 0 3rem;
+}
+
+.chapter-header h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2rem;
+    color: #2e2e2e;
+    display: inline-block;
+    text-shadow: 0 1px 4px rgba(255,255,255,0.4);
+}
+
+.chapter-note {
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto 0 auto;
+    padding: 0 3rem;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1rem;
+    color: #4a4a4a;
+    font-style: italic;
+}
+
+.chapter-stamp {
+    display: inline-block;
+    border: 2px solid #6c89a5;
+    color: #6c89a5;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: rgba(255,255,255,0.5);
+}
+
+.chapter-stamp.wpl2 {
+    border-color: #e37b7b;
+    color: #e37b7b;
+}
+
+.spacer-tape {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    margin: 30px auto 10px auto;
+    opacity: 0.55;
+}
+
+.tape-bit {
+    height: 14px;
+    background: rgba(255, 251, 125, 0.95);
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+.tape-bit:nth-child(1) { width: 45px; transform: rotate(-2deg); }
+.tape-bit:nth-child(2) { width: 30px; transform: rotate(3deg); }
+.tape-bit:nth-child(3) { width: 55px; transform: rotate(-1deg); }
+
+.polaroid-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 3rem 3rem 3rem;
+}
+
+a.polaroid {
+    background: #f7f2e8;
+    padding: 1rem;
+    border: 2px solid #e4d9c6;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 4px;
+}
+
+a.polaroid:hover {
+    transform: rotate(0deg) scale(1.03) !important;
+    box-shadow: 0 14px 30px rgba(0,0,0,0.28);
+}
+
+a.polaroid img {
+    width: 100%;
+    display: block;
+}
+
+.polaroid-grid a.polaroid:nth-child(1) { transform: rotate(-3deg); }
+.polaroid-grid a.polaroid:nth-child(2) { transform: rotate(2deg); }
+.polaroid-grid a.polaroid:nth-child(3) { transform: rotate(-1.5deg); }
+.polaroid-grid a.polaroid:nth-child(4) { transform: rotate(3deg); }
+.polaroid-grid a.polaroid:nth-child(5) { transform: rotate(-2deg); }
+
+.caption {
+    text-align: center;
+    margin-top: 0.7rem;
+    font-size: 1.2rem;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.polaroid-grid--small {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 3rem 3rem 3rem;
+}
+
+.polaroid-grid--small a.polaroid {
+    max-width: 480px;
+    width: 100%;
+}
+
+.polaroid-wpl2 {
+    background: #fff5ee !important;
+    border-color: #e8c9b8 !important;
+    position: relative;
+}
+
+.polaroid-wpl2::before {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e37b7b;
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.journal-entry {
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px;
+}
+
+.journal-entry .polaroid,
+div.polaroid {
+    background: #fff8f0;
+    border: 2px solid #e0d6c6;
+    padding: 25px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    font-family: 'Patrick Hand', cursive;
+    line-height: 1.6;
+    position: relative;
+}
+
+.journal-entry .polaroid img,
+div.polaroid img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: block;
+}
+
+.journal-entry .polaroid p,
+div.polaroid p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    color: #333;
+}
+
+.journal-entry .polaroid::after,
+div.polaroid::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    width: 40px;
+    height: 20px;
+    background: #fffb7d;
+    transform: rotate(-10deg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 4px;
 }
 
 table {
@@ -77,7 +258,6 @@ table {
     font-size: 1rem;
 }
 
-
 thead th {
     background: #6c89a5;
     color: #fff;
@@ -86,13 +266,11 @@ thead th {
     font-size: 1.1rem;
 }
 
-
 td {
     padding: 10px;
     vertical-align: top;
     border-bottom: 1px solid #e0d6c6;
 }
-
 
 td ul {
     margin: 0;
@@ -103,43 +281,19 @@ tbody tr:nth-child(even) {
     background: #fdf6f0;
 }
 
-
 td em {
     font-style: italic;
     color: #a75c5c;
 }
-
 
 tbody tr:hover {
     background: #fff0e6;
     transition: background 0.2s ease;
 }
 
-
-.schedule-table td, .evaluation-table td {
-    position: relative;
-}
-
-.schedule-table td::before, .evaluation-table td::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
-    border-radius: 6px;
-    pointer-events: none;
-}
-
 @media (max-width: 900px) {
-    table {
-        font-size: 0.9rem;
-    }
-
-    thead th {
-        font-size: 1rem;
-    }
+    table { font-size: 0.9rem; }
+    thead th { font-size: 1rem; }
 }
 
 .rewind-button-lis {
@@ -148,7 +302,7 @@ tbody tr:hover {
     right: 40px;
     width: 70px;
     height: 70px;
-    background: rgba(255, 248, 240, 0.85);
+    background: rgba(255, 248, 240, 0.88);
     border: 3px dashed #6c89a5;
     border-radius: 50%;
     box-shadow: 0 6px 15px rgba(0,0,0,0.25);
@@ -159,15 +313,18 @@ tbody tr:hover {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     z-index: 1000;
-    font-family: 'Patrick Hand', cursive;
 }
 
 .rewind-button-lis .arrow {
-    font-size: 2.5rem;
-    color: #6c89a5;
-    display: block;
-    transform: rotate(0deg);
-    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rewind-button-lis .arrow svg {
+    width: 38px;
+    height: 38px;
 }
 
 .rewind-button-lis:hover {
@@ -177,99 +334,7 @@ tbody tr:hover {
 }
 
 .rewind-button-lis:hover .arrow {
-    transform: rotate(-360deg);
-}
-
-.journal-entry {
-    display: flex;
-    justify-content: center;
-    margin: 40px 20px;
-}
-
-.polaroid {
-    background: #fff8f0;
-    border: 2px solid #e0d6c6;
-    padding: 25px;
-    max-width: 700px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    border-radius: 12px;
-    font-family: 'Patrick Hand', cursive;
-    line-height: 1.6;
-    position: relative;
-}
-
-.polaroid img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-
-.polaroid p {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-    color: #333;
-}
-
-.polaroid::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    right: 15px;
-    width: 40px;
-    height: 20px;
-    background: #fffb7d;
-    transform: rotate(-10deg);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    border-radius: 4px;
-}
-
-.role-reflectie {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.role-reflectie h2 {
-    font-family: 'Patrick Hand', cursive;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #000000;
-}
-
-.reflectie-card {
-    background: #fff8f0;
-    border: 2px solid #e0d6c6;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    padding: 20px;
-    margin-bottom: 20px;
-    font-family: 'Patrick Hand', cursive;
-    line-height: 1.6;
-    transition: transform 0.3s ease;
-}
-
-.reflectie-card:hover {
-    transform: rotate(-1deg) scale(1.02);
-}
-
-.reflectie-card .question {
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #4a5a75;
-}
-
-.reflectie-card textarea {
-    width: 100%;
-    min-height: 80px;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-family: 'Patrick Hand', cursive;
-    font-size: 1rem;
-    resize: vertical;
+    transform: rotate(-540deg);
 }
 
 .lis-timeline {
@@ -328,6 +393,7 @@ tbody tr:hover {
     border-radius: 10px;
     box-shadow: 2px 3px 7px rgba(0,0,0,0.25);
     transform: rotate(-1deg);
+    transition: transform 0.2s ease;
 }
 
 .timeline-content h2 {
@@ -337,7 +403,6 @@ tbody tr:hover {
 
 .timeline-content:hover {
     transform: rotate(0deg) scale(1.01);
-    transition: 0.2s ease;
 }
 
 .aim-reflection {
@@ -363,11 +428,11 @@ tbody tr:hover {
     border-radius: 14px;
     box-shadow: 2px 3px 7px rgba(0,0,0,0.25);
     transform: rotate(-0.7deg);
+    transition: transform 0.2s ease;
 }
 
 .aim-block:hover {
     transform: rotate(0deg) scale(1.01);
-    transition: 0.2s ease;
 }
 
 .aim-block h2 {
@@ -385,25 +450,11 @@ tbody tr:hover {
     pointer-events: none;
 }
 
-.doodle-heart {
-    color: #e37b7b;
-}
-
-.doodle-star {
-    color: #f4c158;
-}
-
-.doodle-lightbulb {
-    color: #ffd966;
-}
-
-.doodle-cloud {
-    color: #9eb6d8;
-}
-
-.doodle-rewind {
-    color: #7aa3c7;
-}
+.doodle-heart    { color: #e37b7b; }
+.doodle-star     { color: #f4c158; }
+.doodle-lightbulb{ color: #ffd966; }
+.doodle-cloud    { color: #9eb6d8; }
+.doodle-rewind   { color: #7aa3c7; }
 
 .aim-text[contenteditable="true"] {
     outline: none;
@@ -412,12 +463,13 @@ tbody tr:hover {
 
 .aim-text[contenteditable="true"]:focus {
     background: #fffbe8;
+    border-radius: 6px;
 }
 
 .kernkwadrant {
     max-width: 900px;
     margin: 40px auto;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .kernkwadrant h2 {
@@ -425,6 +477,7 @@ tbody tr:hover {
     font-size: 2rem;
     margin-bottom: 20px;
     transform: rotate(-1deg);
+    display: inline-block;
 }
 
 .kwadrant-grid {
@@ -437,7 +490,7 @@ tbody tr:hover {
     border: 2px solid #2b2b2b;
     padding: 15px 18px;
     background: #fffdf7;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
     transform: rotate(-0.6deg);
     position: relative;
 }
@@ -474,6 +527,7 @@ tbody tr:hover {
     border-left: 4px solid #6aa5ff;
     box-shadow: 0 8px 18px rgba(0,0,0,0.12);
     transform: rotate(-0.4deg);
+    border-radius: 4px;
 }
 
 .kwadrant-reflectie h3 {
@@ -529,7 +583,6 @@ tbody tr:hover {
     font-size: 0.85em;
     color: #333;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
-    text-align: left;
     z-index: 2;
 }
 
@@ -544,29 +597,10 @@ tbody tr:hover {
     transform: translateX(-50%) rotate(-3deg);
 }
 
-.note-top-left {
-    top: 50px;
-    left: 50px;
-    transform: rotate(-7deg);
-}
-
-.note-top-right {
-    top: 50px;
-    right: 50px;
-    transform: rotate(5deg);
-}
-
-.note-bottom-left {
-    bottom: 50px;
-    left: 50px;
-    transform: rotate(4deg);
-}
-
-.note-bottom-right {
-    bottom: 50px;
-    right: 50px;
-    transform: rotate(-5deg);
-}
+.note-top-left     { top: 50px;    left: 50px;  transform: rotate(-7deg); }
+.note-top-right    { top: 50px;    right: 50px; transform: rotate(5deg);  }
+.note-bottom-left  { bottom: 50px; left: 50px;  transform: rotate(4deg);  }
+.note-bottom-right { bottom: 50px; right: 50px; transform: rotate(-5deg); }
 
 .lines {
     position: absolute;
@@ -575,11 +609,223 @@ tbody tr:hover {
     z-index: 1;
 }
 
+.role-reflectie {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.role-reflectie h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.reflectie-card {
+    background: #fff8f0;
+    border: 2px solid #e0d6c6;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'Patrick Hand', cursive;
+    line-height: 1.6;
+    transition: transform 0.3s ease;
+}
+
+.reflectie-card:hover {
+    transform: rotate(-1deg) scale(1.02);
+}
+
+.reflectie-card .question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4a5a75;
+}
+
+.reflectie-card textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1rem;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    max-width: 800px;
+    margin: 40px auto 20px auto;
+    padding: 0 20px;
+}
+
+.section-divider h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    margin: 0;
+    color: #2e2e2e;
+}
+
+.wpl2-badge {
+    display: inline-block;
+    background: #6c89a5;
+    color: #fff;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 0.85rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.contributions-list {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contribution-item {
+    background: #fffdf7;
+    border: 1px solid #e5dcc8;
+    border-left: 4px solid #6c89a5;
+    border-radius: 10px;
+    padding: 14px 18px;
+    box-shadow: 2px 3px 7px rgba(0,0,0,0.12);
+    font-family: 'Patrick Hand', cursive;
+    transform: rotate(-0.4deg);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contribution-item:nth-child(even) {
+    transform: rotate(0.4deg);
+    border-left-color: #e37b7b;
+}
+
+.contribution-item:hover {
+    transform: rotate(0deg) scale(1.01);
+    box-shadow: 4px 5px 12px rgba(0,0,0,0.18);
+}
+
+.contribution-item .contrib-title {
+    font-weight: bold;
+    color: #4a5a75;
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+}
+
+.contribution-item .contrib-desc {
+    color: #444;
+    font-size: 0.97rem;
+    line-height: 1.5;
+}
+
+.contribution-item .contrib-tag {
+    display: inline-block;
+    font-size: 0.78rem;
+    background: #eef3f8;
+    color: #6c89a5;
+    border-radius: 10px;
+    padding: 2px 8px;
+    margin-top: 6px;
+}
+
+.contribution-item:nth-child(even) .contrib-tag {
+    background: #fdf0f0;
+    color: #a75c5c;
+}
+
+.pdf-link-card {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+}
+
+.pdf-card-inner {
+    background: #fffdf7;
+    border: 2px dashed #6c89a5;
+    border-radius: 14px;
+    padding: 36px 30px 28px 30px;
+    text-align: center;
+    box-shadow: 3px 4px 10px rgba(0,0,0,0.13);
+    transform: rotate(-0.5deg);
+    transition: transform 0.2s ease;
+    position: relative;
+}
+
+.pdf-card-inner::before {
+    content: "📎";
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+}
+
+.pdf-card-inner:hover {
+    transform: rotate(0deg) scale(1.01);
+}
+
+.pdf-card-inner h3 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #2e2e2e;
+}
+
+.pdf-card-inner p {
+    font-family: 'Patrick Hand', cursive;
+    color: #555;
+    margin-bottom: 18px;
+    font-size: 1rem;
+}
+
+.pdf-download-btn {
+    display: inline-block;
+    background: #6c89a5;
+    color: #fff;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.1rem;
+    padding: 10px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background 0.2s, transform 0.2s;
+}
+
+.pdf-download-btn:hover {
+    background: #4a6a8a;
+    transform: scale(1.04);
+}
+
+.tape-strip {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    width: 40px;
+    height: 18px;
+    background: rgba(255, 251, 125, 0.88);
+    transform: rotate(8deg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    border-radius: 3px;
+}
+
 .lis-footer {
     position: relative;
     width: 90%;
     max-width: 800px;
-    margin: 40px auto 20px auto;
+    margin: 40px auto 30px auto;
     padding: 15px 20px;
     background: #fffbe6;
     border: 2px solid #ccc;
@@ -589,10 +835,10 @@ tbody tr:hover {
     font-size: 1em;
     text-align: center;
     transform: rotate(-2deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .lis-footer:hover {
     transform: rotate(1deg);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
-

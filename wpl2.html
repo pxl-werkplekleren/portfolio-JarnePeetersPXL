@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WPL2 – Jarne Peeters</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="images/polaroid.png">
+</head>
+<body>
+
+<a href="index.html" class="rewind-button-lis" title="Terug naar home">
+    <span class="arrow"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M20 20 C20 20, 28 12, 28 20 C28 28, 20 32, 12 28 C4 24, 4 12, 12 6 C20 0, 32 2, 36 12" stroke="#6c89a5" stroke-width="2.5" stroke-linecap="round" fill="none"/><polygon points="36,7 38,14 31,13" fill="#6c89a5"/></svg></span>
+</a>
+
+<section class="hero">
+    <h1>Werkplekleren 2</h1>
+    <p class="tagline">Case · Aandeel · Reflectie</p>
+</section>
+
+<div class="section-divider">
+    <h2>📋 De Case</h2>
+</div>
+
+<section class="journal-entry">
+    <div class="polaroid">
+        <div class="tape-strip"></div>
+        <span class="wpl2-badge">WPL2 · Case 3</span>
+        <h2>Qern – Rebranding & Digitale Oplossingen</h2>
+        <p>
+            Qern is een modern studiebureau dat gespecialiseerd is in technische, energie- en veiligheidsstudies
+            binnen de bouwsector. Denk daarbij aan EPB/energieadvies, BIM-engineering, asbestinspecties en
+            veiligheidscoördinatie. De klanten van Qern zijn voornamelijk professionele bouw- en projectpartners
+            die nood hebben aan betrouwbare expertise en een sterk digitaal platform.
+        </p>
+        <p>
+            De opdracht die ons team kreeg was drieledig: een volledige rebranding uitwerken, een nieuwe website
+            bouwen en een bijhorende applicatie ontwikkelen. Het doel was om Qern een frissere en modernere uitstraling
+            te geven die beter aansluit bij hun professionele doelgroep en tegelijkertijd hun digitale aanwezigheid
+            te versterken met een functionele webapplicatie.
+        </p>
+        <p>
+            Als team werkten we agile via Jira met duidelijke sprints, daily standups en retrospectives. Elke sprint
+            leverden we werkende software op die werd besproken met de lectoren. De samenwerking binnen het team
+            verliep grotendeels vlot al moesten we leren omgaan met uiteenlopende werktempo's en technische keuzes.
+            De communicatie met de contactpersoon en lector Geoffrey Feitsma gaf ons een duidelijke richting en feedback
+            die we meenamen in onze volgende iteraties.
+        </p>
+        <p>
+            Technisch gezette we in op een ASP.NET Core API als backend gekoppeld aan een moderne frontend.
+            De app focuste op gebruikersbeheer: registratie, login, profielbeheer en beveiliging waren de kern van
+            onze deliverables. Dit project leerde ons niet alleen programmeren op een realistischer niveau, maar ook
+            hoe je werkt met een echte klant, deadlines en een codebase waar meerdere mensen tegelijk aan werken.
+        </p>
+    </div>
+</section>
+
+<div class="section-divider">
+    <h2>🛠️ Mijn Aandeel</h2>
+</div>
+
+<section class="journal-entry">
+    <div class="polaroid">
+        <div class="tape-strip" style="right:auto;left:15px;transform:rotate(-6deg);"></div>
+        <span class="wpl2-badge">Contributions</span>
+        <h2>Wat heb ik bijgedragen?</h2>
+        <p>
+            Binnen dit project lag mijn focus hoofdzakelijk op het <strong>gebruikersbeheer en de beveiliging</strong>
+            van de applicatie. Ik werkte zowel aan de frontend als aan de backend kant waarbij ik steeds de link
+            probeerde te leggen tussen wat de gebruiker ziet en hoe dat veilig en correct verwerkt wordt achter de schermen.
+        </p>
+        <p>
+            Een groot deel van mijn werk draaide rond het beveiligen van het dashboard: enkel medewerkers mogen
+            aanpassingen doen en bezoekers krijgen beperkte rechten. Dit vereiste nadenken over rol gebaseerde toegang
+            en hoe je dit correct implementeert in een ASP.NET Core omgeving. Ik heb ook gewerkt aan het loggen van
+            login tijden zodat een beheerder kan opvolgen wanneer gebruikers inloggen handig voor monitoring en beveiliging.
+        </p>
+        <p>
+            Verder werkte ik mee aan de volledige login- en registratie stroom: van het aanmaken van profielen,
+            het aanpassen van wachtwoorden (met bevestigingsmail) tot het correct bewaren van sessies zodat
+            de gebruiker ingelogd blijft tijdens het navigeren. Ik nam ook actief deel aan de dagelijkse standups,
+            retrospectives en de voorbereiding van de eindpresentatie.
+        </p>
+        <p>
+            Dit project was voor mij een echte stap richting professioneel werken: werken met Jira-tickets,
+            samenwerken via Git, en verantwoordelijkheid nemen voor concrete stukken van een groter systeem.
+        </p>
+    </div>
+</section>
+
+<div class="section-divider">
+    <h2>🎯 Tickets & Taken</h2>
+</div>
+
+<div class="contributions-list">
+
+    <div class="contribution-item">
+        <div class="contrib-title">🔐 Toegangsbeveiliging Dashboard</div>
+        <div class="contrib-desc">Enkel medewerkers krijgen toegang tot het dashboard en kunnen aanpassingen doen. Implementatie van rolgebaseerde toegangscontrole.</div>
+        <span class="contrib-tag">WPL2526T13-138 / -189</span>
+    </div>
+
+    <div class="contribution-item">
+        <div class="contrib-title">📋 Login Log voor Beheerders</div>
+        <div class="contrib-desc">Beheerders kunnen logintijden van alle gebruikers raadplegen. Logins worden opgeslagen in de database voor opvolging.</div>
+        <span class="contrib-tag">WPL2526T13-278 / -297 / -292</span>
+    </div>
+
+    <div class="contribution-item">
+        <div class="contrib-title">👤 Profielgegevens Bekijken</div>
+        <div class="contrib-desc">Medewerkers kunnen hun eigen profielgegevens en die van bezoekers raadplegen. Correct informatieoverzicht voor intern gebruik.</div>
+        <span class="contrib-tag">WPL2526T13-144 / -199</span>
+    </div>
+
+    <div class="contribution-item">
+        <div class="contrib-title">🕐 Laatste Actieve Tijdsstempel</div>
+        <div class="contrib-desc">Gebruikers kunnen in het overzicht zien wanneer ze voor het laatst ingelogd waren.</div>
+        <span class="contrib-tag">WPL2526T13-280</span>
+    </div>
+
+    <div class="contribution-item">
+        <div class="contrib-title">🖥️ Frontend Login & Registratie</div>
+        <div class="contrib-desc">Opbouw van de login- en registratiepagina aan de frontend-kant, gekoppeld aan de ASP.NET Core backend.</div>
+        <span class="contrib-tag">WPL2526T13-48</span>
+    </div>
+
+    <div class="contribution-item">
+        <div class="contrib-title">⚙️ Technische Setup Backend</div>
+        <div class="contrib-desc">Meegewerkt aan het opzetten van de backend met Visual Studio en ASP.NET Core API.</div>
+        <span class="contrib-tag">WPL2526T13-11 / -46</span>
+    </div>
+
+    <div class="contribution-item">
+        <div class="contrib-title">🔑 Wachtwoord Aanpassen + Bevestigingsmail</div>
+        <div class="contrib-desc">Gebruikers kunnen hun wachtwoord wijzigen en ontvangen een bevestigingsmail met link voor extra veiligheid.</div>
+        <span class="contrib-tag">WPL2526T13-165 / -167</span>
+    </div>
+
+    <div class="contribution-item">
+        <div class="contrib-title">📝 Profiel Aanmaken & Gegevens Aanpassen</div>
+        <div class="contrib-desc">Implementatie van profielaanmaak en de mogelijkheid voor gebruikers om hun gegevens te bewerken.</div>
+        <span class="contrib-tag">WPL2526T13-133 / -163</span>
+    </div>
+
+    <div class="contribution-item">
+        <div class="contrib-title">🚪 Uitloggen & Sessiebeheer</div>
+        <div class="contrib-desc">Uitlogfunctionaliteit en het bewaren van sessies zodat gebruikers ingelogd blijven tijdens navigatie.</div>
+        <span class="contrib-tag">WPL2526T13-151 / -169</span>
+    </div>
+
+    <div class="contribution-item">
+        <div class="contrib-title">📅 Standups, Retrospectives & Presentatie</div>
+        <div class="contrib-desc">Actieve deelname aan daily standups, daily sit-downs, sprint retrospectives, backlog opstellen en voorbereiding eindpresentatie.</div>
+        <span class="contrib-tag">WPL2526T13-100 / -125 / -98 / -258 / -363</span>
+    </div>
+
+</div>
+
+<div class="section-divider">
+    <h2>📄 Eindreflectie</h2>
+</div>
+
+<div class="pdf-link-card">
+    <div class="pdf-card-inner">
+        <h3>Individuele Eindreflectie WPL2</h3>
+        <p>Mijn volledige eindreflectie over Werkplekleren 2 vind je in onderstaand PDF-document. Hierin reflecteer ik op mijn groei, mijn rol in het team en mijn persoonlijke leerpunten tijdens dit project.</p>
+        <a href="reflectie_wpl2.pdf" class="pdf-download-btn" download>📥 Download Reflectie PDF</a>
+    </div>
+</div>
+
+<a href="index.html" class="rewind-button-lis" title="Terug naar home">
+    <span class="arrow"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M20 20 C20 20, 28 12, 28 20 C28 28, 20 32, 12 28 C4 24, 4 12, 12 6 C20 0, 32 2, 36 12" stroke="#6c89a5" stroke-width="2.5" stroke-linecap="round" fill="none"/><polygon points="36,7 38,14 31,13" fill="#6c89a5"/></svg></span>
+</a>
+
+<footer class="lis-footer">
+    <p>©Mijn Portfolio – Jarne Peeters</p>
+</footer>
+
+</body>
+</html>
